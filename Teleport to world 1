@@ -1,0 +1,11 @@
+LocalPlayerTeleport=true
+local args = {
+    [1] = {
+        ["mapId"] = 50001
+    }
+}
+
+       if LocalPlayerTeleport then
+             game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("LocalPlayerTeleport"):FireServer(unpack(args))
+end) 
+)
